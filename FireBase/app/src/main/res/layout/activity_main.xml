@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="307dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="KnowWay"
+        android:textColor="#CC507A"
+        android:textSize="60sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="264dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:ems="10"
+        android:hint="Enter your email "
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="256dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="166dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="133dp"
+        android:text="login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewForget"
+        android:layout_width="240dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="187dp"
+        android:gravity="center"
+        android:text="Forget Password ?"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewRegister"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonlogin" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="165dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="187dp"
+        android:gravity="center"
+        android:text="Register User"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonlogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/linkdin"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="openLinkdin"
+        android:text="LINKDIN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/youtube"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/youtube"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="81dp"
+        android:onClick="openYoutube"
+        android:text="YOUTUBE"
+        app:layout_constraintBottom_toTopOf="@+id/whatsapp"
+        app:layout_constraintEnd_toStartOf="@+id/linkdin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/whatsapp"
+        android:layout_width="137dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="74dp"
+        android:onClick="openWhatsapp"
+        android:text="WHATSAPP"
+        app:layout_constraintBottom_toTopOf="@+id/udemy"
+        app:layout_constraintEnd_toStartOf="@+id/telegram"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youtube" />
+
+    <Button
+        android:id="@+id/telegram"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="251dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="openTelegram"
+        android:text="TELEGRAM"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/udemy"
+        android:layout_width="137dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="110dp"
+        android:onClick="openUdemy"
+        android:text="UDEMY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatsapp" />
+
+    <Button
+        android:id="@+id/chrome"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="164dp"
+        android:onClick="openChrome"
+        android:text="Chrome"
+        app:layout_constraintBottom_toTopOf="@+id/linkdin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/youtube"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
